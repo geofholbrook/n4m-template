@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2452.0, 59.0, 1193.0, 1001.0 ],
+		"rect" : [ 4386.0, -65.0, 1012.0, 628.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,25 +40,72 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-5",
+					"fontsize" : 21.42226530167618,
+					"id" : "obj-11",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 728.0, 244.0, 107.0, 22.0 ],
-					"text" : "script load index.js"
+					"patching_rect" : [ 544.799999999999955, 191.138728323699411, 272.0, 32.0 ],
+					"text" : "myHandlerWithArgs foo bar"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 27.212593224605655,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 229.0, 355.0, 109.0, 39.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict abc"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 21.42226530167618,
+					"id" : "obj-4",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 405.800000000000011, 127.138728323699411, 124.0, 32.0 ],
+					"text" : "myHandler2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 21.422265301676209,
 					"id" : "obj-3",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 379.0, 632.0, 379.0, 22.0 ],
-					"text" : "/Users/geof/Data/programming/max8/node-for-max/test/.build/index.js"
+					"patching_rect" : [ 491.891666666666652, 65.0, 123.0, 32.0 ],
+					"text" : "script status"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 21.422265301676209,
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 285.891666666666652, 65.0, 201.0, 32.0 ],
+					"text" : "script processStatus"
 				}
 
 			}
@@ -77,78 +124,84 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 685.0, 385.0, 400.0, 220.0 ],
+					"patching_rect" : [ 469.0, 355.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 21.422265301676163,
 					"id" : "obj-1",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 563.0, 199.0, 73.0, 22.0 ],
-					"text" : "list-methods"
+					"patching_rect" : [ 544.799999999999955, 127.138728323699411, 73.0, 32.0 ],
+					"text" : "1 a b c"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 21.422265301676209,
 					"id" : "obj-51",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 596.0, 240.0, 63.0, 22.0 ],
+					"patching_rect" : [ 174.891666666666652, 65.0, 106.0, 32.0 ],
 					"text" : "script stop"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 29.402047713704611,
 					"id" : "obj-50",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 464.0, 381.0, 32.0, 22.0 ],
+					"patching_rect" : [ 66.0, 351.0, 66.0, 41.0 ],
 					"text" : "print"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 21.422265301676237,
 					"id" : "obj-49",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 402.0, 256.0, 64.0, 22.0 ],
+					"patching_rect" : [ 66.0, 65.0, 107.466666666666697, 32.0 ],
 					"text" : "script start"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 21.42226530167618,
 					"id" : "obj-48",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 484.0, 199.0, 52.0, 22.0 ],
-					"text" : "respond"
+					"patching_rect" : [ 280.800000000000011, 127.138728323699411, 112.0, 32.0 ],
+					"text" : "myHandler"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 21.422265301676209,
 					"id" : "obj-44",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 464.0, 323.0, 570.0, 22.0 ],
+					"patching_rect" : [ 66.0, 283.208092485549173, 452.0, 32.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
@@ -157,90 +210,7 @@
 						"watch" : 1
 					}
 ,
-					"text" : "node.script /Users/geof/Data/programming/max8/node-for-max/test/.build/index.js @autostart 1 @watch 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-35",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 258.0, 385.0, 51.0, 22.0 ],
-					"text" : "zl.group"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 188.5, 453.0, 190.0, 22.0 ],
-					"text" : "60"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 235.75, 251.0, 92.5, 22.0 ],
-					"text" : "t b l"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 253.0, 189.0, 46.0, 22.0 ],
-					"text" : "pack i i"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 304.0, 310.0, 29.5, 22.0 ],
-					"text" : "bag"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 263.333343505859375, 150.0, 142.0, 22.0 ],
-					"text" : "notein"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 271.66668701171875, 80.0, 150.0, 20.0 ],
-					"text" : "node for Max"
+					"text" : "node.script example.js @autostart 1 @watch 1"
 				}
 
 			}
@@ -254,59 +224,31 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 1 ],
-					"source" : [ "obj-21", 1 ]
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"source" : [ "obj-21", 0 ]
+					"destination" : [ "obj-44", 0 ],
+					"midpoints" : [ 295.391666666666652, 112.0, 75.5, 112.0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"source" : [ "obj-22", 0 ]
+					"destination" : [ "obj-44", 0 ],
+					"midpoints" : [ 501.391666666666652, 111.0, 75.5, 111.0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"source" : [ "obj-24", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"order" : 0,
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"order" : 1,
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 1 ],
-					"source" : [ "obj-35", 0 ]
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -334,6 +276,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
+					"midpoints" : [ 75.5, 100.0, 75.5, 100.0 ],
 					"source" : [ "obj-49", 0 ]
 				}
 
@@ -341,19 +284,20 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
+					"midpoints" : [ 184.391666666666652, 113.0, 75.5, 113.0 ],
 					"source" : [ "obj-51", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "example.js",
+				"bootpath" : "~/Data/programming/max8/node-for-max/test/patches",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "n4m.monitor.maxpat",
 				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
 				"type" : "JSON",

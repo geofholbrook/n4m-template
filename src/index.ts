@@ -1,7 +1,11 @@
-import maxApi from "max-api";
+import maxApi, { MESSAGE_TYPES, POST_LEVELS } from "max-api";
 
-maxApi.outlet({ POST_LEVELS: maxApi.POST_LEVELS });
-
-maxApi.addHandler("respond", () => {
-  setInterval(() => maxApi.outlet("this works"), 1000);
+maxApi.addHandler(MESSAGE_TYPES.BANG, () => {
+  maxApi.post("received bang message");
 });
+
+declare class Patcher {
+  constructor(...args: unknown[])
+}
+
+var p = new Patcher(1,2,3,4);
