@@ -24,6 +24,9 @@ const handlers = {
   [MESSAGE_TYPES.LIST]: (...elements: [number, ...unknown[]]) => {
     maxApi.post(`received a list: ${elements}`);
   },
+  [MESSAGE_TYPES.DICT]: (dict: Record<string, unknown>) => {
+    maxApi.post(`received an great object: ${JSON.stringify(dict)}`);
+  },
   myHandler2: () => {
     maxApi.post("received myHandler2 message");
   },

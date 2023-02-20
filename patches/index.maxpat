@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1826.0, 52.0, 2186.0, 1319.0 ],
+		"rect" : [ 2100.0, 72.0, 1883.0, 1319.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,24 +40,60 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "message",
-					"numinlets" : 2,
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 0,
+					"patching_rect" : [ 128.0, 653.0, 49.0, 22.0 ],
+					"text" : "noteout"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "button",
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 756.0, 409.0, 50.0, 22.0 ]
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 222.0, 450.0, 127.0, 127.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "int", "int", "int", "int" ],
+					"patching_rect" : [ 66.0, 459.0, 87.0, 22.0 ],
+					"text" : "unpack 0 0 0 0"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-11",
-					"maxclass" : "message",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "float" ],
+					"patching_rect" : [ 66.0, 584.0, 61.0, 22.0 ],
+					"text" : "makenote"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 301.0, 384.0, 89.0, 22.0 ],
-					"text" : "storagewindow"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 66.0, 379.0, 85.0, 22.0 ],
+					"text" : "route midinote"
 				}
 
 			}
@@ -66,48 +102,21 @@
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 301.0, 453.0, 73.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 44, 1027, 130 ],
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0,
-						"storage_rect" : [ 601, 474, 1201, 774 ]
-					}
-,
-					"text" : "pattrstorage",
-					"varname" : "u250009564[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 749.0, 334.0, 56.0, 22.0 ],
-					"restore" : 					{
-						"slider" : [ 49 ]
-					}
-,
-					"text" : "autopattr",
-					"varname" : "u250009564"
+					"numoutlets" : 0,
+					"patching_rect" : [ 453.0, 429.0, 82.0, 22.0 ],
+					"text" : "print"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
-					"maxclass" : "slider",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 124.0, 528.0, 20.0, 140.0 ],
-					"varname" : "slider"
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 453.0, 386.0, 72.0, 22.0 ],
+					"text" : "route stdout"
 				}
 
 			}
@@ -164,7 +173,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 456.0, 511.0, 642.0, 704.0 ],
+					"patching_rect" : [ 801.0, 379.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -179,20 +188,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 174.891666666666652, 65.0, 106.0, 32.0 ],
 					"text" : "script stop"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 29.402047713704611,
-					"id" : "obj-50",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 66.0, 351.0, 152.0, 41.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
-					"text" : "thispatcher"
 				}
 
 			}
@@ -221,8 +216,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -233,8 +226,59 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-12", 0 ],
+					"order" : 1,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"order" : 0,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 1 ],
+					"source" : [ "obj-11", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 2 ],
+					"source" : [ "obj-12", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 1 ],
+					"source" : [ "obj-12", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 2 ],
+					"source" : [ "obj-12", 2 ]
 				}
 
 			}
@@ -263,7 +307,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-50", 0 ],
+					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-44", 0 ]
 				}
 
@@ -271,6 +315,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
+					"order" : 1,
+					"source" : [ "obj-44", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 0,
 					"source" : [ "obj-44", 1 ]
 				}
 
@@ -293,20 +346,12 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 1 ],
-					"source" : [ "obj-8", 2 ]
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
  ],
-		"parameters" : 		{
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "index.js",
 				"bootpath" : "~/Data/programming/max8/node-for-max/test/patches",

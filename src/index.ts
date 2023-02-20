@@ -1,11 +1,8 @@
-import maxApi, { MESSAGE_TYPES, POST_LEVELS } from "max-api";
+import maxApi, { MESSAGE_TYPES } from "max-api";
+import { repeatNote, OutletMidiOutput, superRandom } from "./lib/player";
 
 maxApi.addHandler(MESSAGE_TYPES.BANG, () => {
   maxApi.post("received bang message");
+  //   repeatNote(60, new OutletMidiOutput());
+  superRandom(new OutletMidiOutput());
 });
-
-declare class Patcher {
-  constructor(...args: unknown[])
-}
-
-var p = new Patcher(1,2,3,4);
