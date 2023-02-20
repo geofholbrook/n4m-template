@@ -1,10 +1,10 @@
 import maxApi, { MESSAGE_TYPES, POST_LEVELS } from "max-api";
 
-maxApi.outlet("output", "to", "outlet");
+maxApi.outlet("demonstrates", "outlet", "method");
 maxApi.outletBang();
-maxApi.post("output to max window");
+maxApi.post("demonstrates post method");
+maxApi.post(JSON.stringify({ MESSAGE_TYPES, POST_LEVELS }, null, 4));
 
-maxApi.post({ MESSAGE_TYPES, POST_LEVELS });
 
 maxApi.addHandler("myHandler", () => {
   maxApi.post("received myHandler message");
@@ -25,7 +25,7 @@ const handlers = {
     maxApi.post(`received a list: ${elements}`);
   },
   [MESSAGE_TYPES.DICT]: (dict: Record<string, unknown>) => {
-    maxApi.post(`received an great object: ${JSON.stringify(dict)}`);
+    maxApi.post(`received an object: ${JSON.stringify(dict)}`);
   },
   myHandler2: () => {
     maxApi.post("received myHandler2 message");

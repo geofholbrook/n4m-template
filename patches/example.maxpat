@@ -76,6 +76,10 @@
 			}
 , 			{
 				"box" : 				{
+					"data" : 					{
+						"a" : 1
+					}
+,
 					"fontsize" : 27.212593224605655,
 					"id" : "obj-7",
 					"maxclass" : "newobj",
@@ -84,7 +88,7 @@
 					"outlettype" : [ "dictionary", "", "", "" ],
 					"patching_rect" : [ 663.0, 115.5, 96.0, 39.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0,
+						"embed" : 1,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
@@ -108,6 +112,10 @@
 			}
 , 			{
 				"box" : 				{
+					"data" : 					{
+						"demo" : "of getDict"
+					}
+,
 					"fontsize" : 27.212593224605655,
 					"id" : "obj-5",
 					"maxclass" : "newobj",
@@ -116,7 +124,7 @@
 					"outlettype" : [ "dictionary", "", "", "" ],
 					"patching_rect" : [ 214.0, 445.5, 109.0, 39.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0,
+						"embed" : 1,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
